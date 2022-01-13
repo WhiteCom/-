@@ -16,7 +16,9 @@ public class Enemy : MonoBehaviour
     //=====================================================
     // 길찾기 용
     //=====================================================
-    
+
+    private Animator animator;
+
     private int[] dist;
     private int distLen;
     private Stack<int> wayList;
@@ -38,6 +40,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        animator = gameObject.GetComponent<Animator>();
 
         //(0, 0)이 시작점일 때
         dist = GroundManager.instance.ShortestPath();
@@ -199,6 +202,34 @@ public class Enemy : MonoBehaviour
         eV.y = tiles[idx].transform.position.y;
 
         Vector2 v = eV - sV;
+
+        int LR = (int)sV.x - (int)eV.x;
+        int UD = (int)sV.y - (int)eV.y;
+        int dir = 0; //default L
+
+        if (LR < 0) //right
+        {
+            dir = 1;
+            animator.Play("marisa_right");
+        }
+        else if (LR > 0) //left
+        {
+            dir = 0;
+            animator.Play("marisa_left");
+        }
+        
+        //mirrored up & down in map
+        if (UD > 0) //down
+        {
+            dir = 2;
+            animator.Play("marisa_down");
+        }
+            
+        else if (UD < 0) //up
+        {
+            dir = 3;
+            animator.Play("marisa_up");
+        }
 
         transform.Translate(v);
     }
