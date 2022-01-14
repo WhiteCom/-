@@ -63,10 +63,6 @@ public class GroundManager : MonoBehaviour
             int tx = (int)tileObjs[i].transform.position.x;
             int ty = (int)tileObjs[i].transform.position.y;
 
-            tileObjs[i].curIdx = ty * max_X + ty;
-            tileObjs[i].nextIdx = -1;                       //tmp idx
-            tileObjs[i].visit = false;
-
             //find startP
             if(tileObjs[i].start)
             {

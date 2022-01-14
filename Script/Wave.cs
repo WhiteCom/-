@@ -61,7 +61,6 @@ public class Wave : MonoBehaviour
     
     public void enemyAllocate()
     {
-        enemyPool[currentIndex].transform.position = startP.position;
         enemyPool[currentIndex].SetActive(true);
 
         currentIndex++;
@@ -78,6 +77,7 @@ public class Wave : MonoBehaviour
             if (enemyPool[i].transform.position.x == endP.transform.position.x && 
                 enemyPool[i].transform.position.y == endP.transform.position.y)
             {
+                enemyPool[i].transform.position = startP.position;
                 enemyPool[i].SetActive(false);
             }
         }

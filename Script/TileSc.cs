@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class TileSc : MonoBehaviour
 {
-    //for move
-    public int curIdx;              //Curr node
-    public int nextIdx;             //Next node
-
-    public int weight;              //for pathfinding
-    public bool visit;              //Check visit
+    public int weight;                //가중치
 
     public int type;                //Ground, Air, etc...
-    public bool build, start, end;  //Point
+    public bool build, start, end;  //생성가능 여부, 시작점, 끝점
 
     public float x, y;
 

@@ -171,18 +171,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &256285192 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7990782860128544168, guid: 74e93dd3f05b4994e8c4c7141aad1cba,
-    type: 3}
-  m_PrefabInstance: {fileID: 1848330684}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &511672244 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7990782860928235878, guid: 74e93dd3f05b4994e8c4c7141aad1cba,
-    type: 3}
-  m_PrefabInstance: {fileID: 1848330684}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,8 +283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50727bf62d4a56d4e90abd8ab7ee9331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startP: {fileID: 256285192}
-  endP: {fileID: 511672244}
+  startP: {fileID: 1346108441}
+  endP: {fileID: 1426385138}
   enemyPrefab: {fileID: 7590202954250274954, guid: 73f353ae6d22bf9449666fe35d432b3c,
     type: 3}
   enemyPool: []
@@ -315,7 +303,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1848330684
+--- !u!4 &1346108441 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7990782860128544168, guid: 74e93dd3f05b4994e8c4c7141aad1cba,
+    type: 3}
+  m_PrefabInstance: {fileID: 1545788582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1426385138 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7990782860928235878, guid: 74e93dd3f05b4994e8c4c7141aad1cba,
+    type: 3}
+  m_PrefabInstance: {fileID: 1545788582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1545788582
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
