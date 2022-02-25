@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6451620984891608781}
   - component: {fileID: 678573053891145406}
   - component: {fileID: 924103051575290838}
+  - component: {fileID: 3806528437612651202}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Tile
@@ -47,6 +48,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -71,8 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6652444304267781646, guid: 88d52eb6220bbd14695481e1d5b096c4,
-    type: 3}
+  m_Sprite: {fileID: 6652444304267781646, guid: 88d52eb6220bbd14695481e1d5b096c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,13 +96,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79808677cb89ebb4daffe436b5017ad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curIdx: 0
-  nextIdx: 0
   weight: 100
-  visit: 0
   type: 0
   build: 0
   start: 0
   end: 0
   x: 0
   y: 0
+--- !u!114 &3806528437612651202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470334858758560434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20efe25ee3b12241945afb7dc22ac0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 0, g: 0, b: 0, a: 0}

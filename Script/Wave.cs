@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Wave : MonoBehaviour
@@ -46,6 +47,7 @@ public class Wave : MonoBehaviour
     //=====================================================
     // 오브젝트 풀링
     //=====================================================
+
     public void enemyCreate()
     {
         if (enemyCount == 0)
@@ -79,6 +81,7 @@ public class Wave : MonoBehaviour
             {
                 enemyPool[i].transform.position = startP.position;
                 enemyPool[i].SetActive(false);
+                PlayerStat.Lives--;
             }
         }
     }
