@@ -1,9 +1,10 @@
 # TowerDefense PathFinding
 
 <타워디펜스 길찾기 로직 개선>
+![경로 바꾸기](https://user-images.githubusercontent.com/42011665/155674574-ca4f63c9-c44e-4e3d-85fd-b6c65e3de10f.png)
+![출발경로가 여러개일때](https://user-images.githubusercontent.com/42011665/155674594-11ff8aee-b0ee-4c90-8053-349d3cae89ae.png)
 
-1. 이전 게임 문제점
-![이전 타워디펜스 포폴2](https://user-images.githubusercontent.com/42011665/155671918-368b2c10-162c-42b3-9543-af81b82d04b4.png)
+* 이전 게임 문제점
 
 - 이전 길찾기 방식 : wayPoint(오브젝트)를 설치하여 배열에 담아 이동경로 구성
 - 문제점
@@ -14,8 +15,6 @@
 
 <프로젝트 목표>
 - 길찾기 알고리즘을 적용하여 타워디펜스 게임을 새롭게 만들어보자.
-![경로 바꾸기](https://user-images.githubusercontent.com/42011665/155674574-ca4f63c9-c44e-4e3d-85fd-b6c65e3de10f.png)
-![출발경로가 여러개일때](https://user-images.githubusercontent.com/42011665/155674594-11ff8aee-b0ee-4c90-8053-349d3cae89ae.png)
 
 
 #2021.12.30 ~ 2022.02.20
