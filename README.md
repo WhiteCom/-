@@ -6,15 +6,14 @@
 
 ![출발경로가 여러개일때](https://user-images.githubusercontent.com/42011665/155678306-a6fd6706-227c-49fa-a4d3-0da6e36c5adc.png)
 
+-----
 
-![경로 바꾸기](https://user-images.githubusercontent.com/42011665/155674574-ca4f63c9-c44e-4e3d-85fd-b6c65e3de10f.png)
+<개발 배경>
 
-![출발경로가 여러개일때](https://user-images.githubusercontent.com/42011665/155674594-11ff8aee-b0ee-4c90-8053-349d3cae89ae.png)
-
+* 이전 게임 문제점
 
 ![이전 타워디펜스 포폴2](https://user-images.githubusercontent.com/42011665/155677951-8347ce60-6a71-4cf8-a833-52ef9950a604.png)
 
-* 이전 게임 문제점
 
 - 이전 길찾기 방식 : wayPoint(오브젝트)를 설치하여 배열에 담아 이동경로 구성
 - 문제점
